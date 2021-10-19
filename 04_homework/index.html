@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=4b08dfce-c66f-4150-84ef-20a9647bea41&lang=ru_RU" type="text/javascript">
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4 hel-img">
+                <img src="https://openweathermap.org/img/wn/01d@2x.png" class="card-img" alt="image">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Погода в городе</h5>
+                    <p class="card_subtitle"><small class="text-muted"></small></p>
+                    <p class="card-text"></p>
+                    <p class="desc_text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form_flex">
+        <input class="form-control" type="text" placeholder="введите город">
+        <button class="btn btn-primary btn-md btn1">Weather</button>
+    </div>
+    <hr>
+    
+    <div class="weather3">
+        <button type="button" class="btn btn-secondary btn-md btn2">Call 3 day</button>
+        <h1>Call 3 day</h1>
+        <div class="row">
+            <div class="wea3d col-md-4">
+                <div class="card">
+                    <div class="img1">
+                        <img class="card-img-top" src="https://openweathermap.org/img/wn/02d@2x.png" alt="image">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">Город</p>
+                        <p class="card-title card-stitle">число и время</p>
+                        <p class="card-text">Погода на завтра</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wea3d col-md-4">
+                <div class="card">
+                    <div class="img2">
+                        <img class="card-img-top" src="https://openweathermap.org/img/wn/02d@2x.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title city2">Город</p>
+                        <p class="card-title card-stitle2">число и время</p>
+                        <p class="card-text card-text2">Погода на послезавтра</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wea3d col-md-4">
+                <div class="card">
+                    <div class="img3">
+                        <img class="card-img-top" src="https://openweathermap.org/img/wn/02d@2x.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title city3">Город</p>
+                        <p class="card-title card-stitle3">число и время</p>
+                        <p class="card-text card-text3">Погода через три дня</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

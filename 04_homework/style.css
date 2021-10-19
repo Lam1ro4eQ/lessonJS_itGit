@@ -1,0 +1,57 @@
+html, body {
+    font-family: serif;
+}
+body {
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.card-body {
+    min-height: auto;
+}
+.card-text {
+    font-size: 32px;
+    font-weight: 900;
+}
+/* #map {
+    width: 100%;
+    height: 600px
+} */
+.card {
+    max-width: 540px;
+}
+.form-control {
+    max-width: 400px;
+    margin-right: 54px;
+}
+.btn1 {
+    max-width: 120px;
+}
+.form_flex {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.weather3 {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+.weather3 .card {
+    max-width: 540px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather3 p {
+    text-align: center;
+}
+select.form-select-castom {
+    margin-bottom: 10px;
+}
