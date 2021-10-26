@@ -250,3 +250,16 @@ function f15() {
 }
 
 document.querySelector('.b-15').addEventListener('click', f15);
+
+// Task 15
+//При нажатии .b-15 выполняете функцию f15. Функция должна получить NodeList элементов .out-15 c помощью document.querySelectorAll, затем c помощью for of перебрать полученную коллекцию элементов .out-15 записать внутрь них число 15 ( затерев содержимое).
+
+
+function f15() {
+    let nd = document.querySelectorAll('.out-15');
+    for ( let item of nd ) {
+        item.textContent = 15;
+    }
+}
+
+document.querySelector('.b-15').addEventListener('click', f15);
