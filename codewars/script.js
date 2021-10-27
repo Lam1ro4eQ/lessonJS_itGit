@@ -36,10 +36,25 @@ function list(names){
       }
     }
   }
+  return out;
+}
+//list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}, {name: 'Alex'} ])
+// returns 'Bart, Lisa & Maggie'
+
+
+
+
+//Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+function even_or_odd(number) {
+  let out = '';
+  if ( number%2 ) {
+    out = 'Odd';
+  } else {
+    out = 'Even';
+  }
   console.log(out);
   return out;
-  
 }
-console.log([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}, {name: 'Alex'} ]);
-list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}, {name: 'Alex'} ])
-// returns 'Bart, Lisa & Maggie'
+
+even_or_odd(22);
