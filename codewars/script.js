@@ -14,18 +14,6 @@ function squareDigits(num){
 }
 
 
-function squareDigits(num){
-  let txtArr = String(num).split('');
-  let out = '';
-  for ( let i = 0; txtArr.length > i; i++ ) {
-    out += Math.pow(txtArr[i], 2);
-  }
-  out = Number(out);
-  console.log(typeof(out));
-  console.log(out);
-  return out;
-}
-
 // squareDigits(9123);
 
 
@@ -35,10 +23,23 @@ function squareDigits(num){
 // Return: a string formatted as a list of names separated by commas except for the last two names, which should be separated by an ampersand.
 
 function list(names){
+  let out = '';
   for ( let i = 0; names.length > i; i++ ) {
-    1
+    for ( let item in names[i]) {
+      if ( i == names.length - 1) {
+        out += `${names[i][item]}`;
+      } else if ( i !== names.length - 2 ) {
+        out += `${names[i][item]}, `;
+        
+      } else {
+        out += `${names[i][item]} & `;
+      }
+    }
   }
+  console.log(out);
+  return out;
+  
 }
-
-list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'} ])
+console.log([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}, {name: 'Alex'} ]);
+list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}, {name: 'Alex'} ])
 // returns 'Bart, Lisa & Maggie'
