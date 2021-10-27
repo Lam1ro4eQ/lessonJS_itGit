@@ -38,7 +38,7 @@ function list(names){
   }
   return out;
 }
-//list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}, {name: 'Alex'} ])
+list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'}, {name: 'Alex'} ]);
 // returns 'Bart, Lisa & Maggie'
 
 
@@ -53,8 +53,26 @@ function even_or_odd(number) {
   } else {
     out = 'Even';
   }
-  console.log(out);
   return out;
 }
 
-even_or_odd(22);
+//even_or_odd(22);
+
+
+
+
+// An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+
+function isIsogram(str){
+  str = str.toLowerCase();
+    for ( let i = 0; str.length > i; i++) {
+      if ( str.indexOf(str[i]) !== str.lastIndexOf(str[i])) {
+        return false;
+      }
+    } 
+     return true;
+}
+//console.log(isIsogram('huiloh'));
+
+
+      
