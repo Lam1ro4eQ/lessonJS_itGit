@@ -87,3 +87,18 @@ function isIsogram(str){
 // s="aaaxbbbbyyhwawiwjjjwwm"
 // printer_error(s) => "8/22"
       
+function printerError(s) {
+  let tmp = s.split('');
+  let sum = 0;
+  let err = 0;
+  for ( let i = 0; tmp.length > i; i++) { //общее кол-во
+    sum++;
+    if ( /[^a-m]/gm.test(tmp[i])) {   // кол-во не входящих в диапазон a to m
+      err++;
+    }
+  }
+  let res = `${err}/${sum}`;
+  return res;
+}
+
+printerError('aaabbbbhaijjjm');
