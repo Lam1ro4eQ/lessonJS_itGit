@@ -133,17 +133,16 @@ function likes(names) {
 
 
 
-function likes(names) {
-  if (names.length == 0) {
-    return "no one likes this";
-  } else if (names.length == 1) {
-    return names[0] + " likes this";  
-  } else if (names.length == 2) {
-    return names[0] + " and " + names[1] + " like this";
-  } else if (names.length == 3) {
-    return names[0] + ", " + names[1] + " and " + names[2] + " like this";
-  } else {
-    return names[0] + ", " + names[1] + " and " + (names.length - 2) + " others like this";
-  }
-}
 
+// Тролли атакуют ваш раздел комментариев!
+// Обычный способ справиться с этой ситуацией - удалить все гласные из комментариев троллей, нейтрализуя угрозу.
+// Ваша задача - написать функцию, которая принимает строку и возвращает новую строку с удаленными гласными.
+// Например, строка «This website is for losers LOL!» станет "Ths wbst s fr lsrs LL!".
+// Примечание: для этого ката y не считается гласной.
+
+function disemvowel(str) {
+  let outputString = (str.replace(/[aeiou]/gi, ""));
+  console.log(outputString);
+  return outputString;
+}
+ disemvowel("This website is for losers LOL!");
