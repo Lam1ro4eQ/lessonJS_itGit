@@ -145,4 +145,19 @@ function disemvowel(str) {
   console.log(outputString);
   return outputString;
 }
- disemvowel("This website is for losers LOL!");
+//  disemvowel("This website is for losers LOL!");
+
+
+
+// В этом ката вы создадите функцию, которая принимает список неотрицательных целых чисел и строк и возвращает новый список с отфильтрованными строками.
+
+function filter_list(l) {
+  let newarr = [];
+  for ( let i = 0; l.length > i; i++ ) {
+    if (typeof l[i] == "number") {
+      newarr.push(l[i]);
+    }
+  }
+  return newarr;
+}
+filter_list([1,2,'aasf','1','123',123]);
