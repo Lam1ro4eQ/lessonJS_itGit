@@ -160,4 +160,21 @@ function filter_list(l) {
   }
   return newarr;
 }
-filter_list([1,2,'aasf','1','123',123]);
+// filter_list([1,2,'aasf','1','123',123]);
+
+
+
+
+// Учитывая случайное неотрицательное число, вы должны вернуть цифры этого числа в массиве в обратном порядке.
+
+function digitize(n) {
+  
+  let arr = n.toString().split('').reverse();
+  
+  for ( let i = 0; arr.length > i; i++ ) {
+    arr[i] = Number(arr[i]);
+  }
+  console.log(arr);
+  return arr;
+}
+ digitize(1234567);
