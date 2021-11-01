@@ -228,14 +228,22 @@ function oddOrEven(array) {
 // arrayDiff([1,2,2,2,3],[2]) == [1,3]
 
 function arrayDiff(a, b) {
-  for ( let i = 0; a.length > i; i++ ) {
-    for ( let k = 0; b.length > k; k++ ) {
-      if (a[i] == b[k]) {
-        a.splice(a[i], 1);
-      }
+  let arr = [];
+  for ( let item of a) {
+    if (!b.includes(item)) {
+      arr.push(item);
     }
   }
-  console.log(a);
+  return arr;
+  // for ( let i = 0; a.length > i; i++ ) {
+  //   for ( let k = 0; b.length > k; k++ ) {
+  //     console.log(a[i]);
+  //     if (a[i] == b[k]) {
+  //       a.splice(a[i], 1);
+  //     }
+  //   }
+  // }
+  // console.log(a);
 }
 
-arrayDiff([1,2,2,2,3],[2]);
+arrayDiff([1,2],[2]);
