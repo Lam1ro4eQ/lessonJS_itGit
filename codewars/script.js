@@ -195,4 +195,25 @@ function order(words){
     return a.match(/\d/) - b.match(/\d/);
   }).join(' ');
 }
-order("4of Fo1r pe6ople g3ood th5e the2");
+// order("4of Fo1r pe6ople g3ood th5e the2");
+
+
+
+
+// Given a list of integers, determine whether the sum of its elements is odd or even.
+// Give your answer as a string matching "odd" or "even".
+// If the input array is empty consider it as: [0] (array with a zero).
+
+function oddOrEven(array) {
+  let sum = 0;
+  for ( let i = 0; array.length > i; i++ ) {
+  sum = sum + array[i];
+ }
+ console.log(sum);
+  if (sum%2) {
+    return 'odd';
+  } else { return 'even'}
+  
+}
+
+oddOrEven([0, -1, -5]);
