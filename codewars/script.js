@@ -306,12 +306,27 @@ let number = function(busStops){
 // Testing: [1, 0, 1, 1] ==> 11
 
 const binaryArrayToNumber = arr => {
-  // let a = ;
-  let parsed = parseInt(arr.join(""), 2);
-  // for ( let i = 0; arr.length > i; i++ ) {
+  let a = arr.join("");
+  let parsed = parseInt(a, 2);
+  return parsed;
+}
+// binaryArrayToNumber([1, 0, 0, 1]);
 
-  // }
-  console.log(a);
-  console.log(parsed);
-};
-binaryArrayToNumber([1, 0, 0, 1]);
+
+
+
+
+// Учитывая строку, вы должны вернуть строку, в которой каждый символ (с учетом регистра) повторяется один раз.
+// doubleChar("String") ==> "SSttrriinngg"
+// doubleChar("Hello World") ==> "HHeelllloo  WWoorrlldd"
+// doubleChar("1234!_ ") ==> "11223344!!__  "
+
+function doubleChar(str) {
+  let out = [];
+  let str1 = str.split("");
+  for ( let i = 0; str1.length > i; i++ ) {
+    out += str1[i] + str1[i];
+  }
+  return out;
+}
+// doubleChar("Sstring");
