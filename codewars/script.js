@@ -288,3 +288,30 @@ let number = function(busStops){
   }
   return peopleIn - peopleOut;
 }
+
+
+
+
+
+// Учитывая массив единиц и нулей, преобразуйте эквивалентное двоичное значение в целое число.
+// Например: [0, 0, 0, 1]рассматривается как 0001двоичное представление 1.
+// Примеры:
+// Testing: [0, 0, 0, 1] ==> 1
+// Testing: [0, 0, 1, 0] ==> 2
+// Testing: [0, 1, 0, 1] ==> 5
+// Testing: [1, 0, 0, 1] ==> 9
+// Testing: [0, 0, 1, 0] ==> 2
+// Testing: [0, 1, 1, 0] ==> 6
+// Testing: [1, 1, 1, 1] ==> 15
+// Testing: [1, 0, 1, 1] ==> 11
+
+const binaryArrayToNumber = arr => {
+  // let a = ;
+  let parsed = parseInt(arr.join(""), 2);
+  // for ( let i = 0; arr.length > i; i++ ) {
+
+  // }
+  console.log(a);
+  console.log(parsed);
+};
+binaryArrayToNumber([1, 0, 0, 1]);
