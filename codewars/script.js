@@ -352,3 +352,13 @@ class SmallestIntegerFinder {
   }
 }
 // findSmallestInt([34, -345, -1, 100]);
+
+
+
+// Создайте функцию, которая будет возвращать приветствие, использующее ввод; ваша программа должна вернуться, "Hello, <name> how are you doing today?".
+// [Убедитесь, что вы набираете именно то, что я написал, иначе программа может работать некорректно]
+
+function greet(name){
+ return `Hello, ${name} how are you doing today?`;;
+}
+// greet('Alex');
