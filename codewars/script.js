@@ -254,5 +254,16 @@ function arrayDiff(a, b) {
 
 
 function reverseWords(str) {
-  // Go for it
+  let war = str.split(" ");
+  let out = [];
+  console.log(war);
+  
+  for ( let i = 0; war.length > i; i++) {
+     out.push(war[i].split("").reverse().join(""));
+  }
+   let k = out.join(" ");
+  console.log(k);
+  return out;
 }
+
+reverseWords('The quick brown fox jumps over the lazy dog.');
