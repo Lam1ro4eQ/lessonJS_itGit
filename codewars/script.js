@@ -330,3 +330,25 @@ function doubleChar(str) {
   return out;
 }
 // doubleChar("Sstring");
+
+
+
+
+// Учитывая массив целых чисел, ваше решение должно найти наименьшее целое число.
+// Например:
+// Учитывая [34, 15, 88, 2]ваше решение вернется2
+// Учитывая [34, -345, -1, 100]ваше решение вернется-345
+// Для целей этого ката вы можете предположить, что предоставленный массив не будет пустым.
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let min = args[0];
+    for ( let i = 0; args.length > i; i++ ) {
+      if ( min > args[i]) {
+        min = args[i];
+      }
+    }
+    return min;
+  }
+}
+// findSmallestInt([34, -345, -1, 100]);
