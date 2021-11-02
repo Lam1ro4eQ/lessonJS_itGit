@@ -246,4 +246,13 @@ function arrayDiff(a, b) {
   // console.log(a);
 }
 
-arrayDiff([1,2],[2]);
+// arrayDiff([1,2],[2]);
+
+
+
+// Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+
+
+function reverseWords(str) {
+  // Go for it
+}
