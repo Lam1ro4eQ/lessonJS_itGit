@@ -262,8 +262,13 @@ function reverseWords(str) {
      out.push(war[i].split("").reverse().join(""));
   }
    let k = out.join(" ");
-  console.log(k);
+  console.log(out);
   return out;
 }
 
-reverseWords('The quick brown fox jumps over the lazy dog.');
+// reverseWords('The quick brown fox jumps over the lazy dog.');
+
+
+
+
+
