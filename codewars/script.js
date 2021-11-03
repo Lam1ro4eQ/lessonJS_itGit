@@ -446,3 +446,15 @@ function greet (name, owner) {
 function cockroachSpeed(s) {
   return parseInt(s * (1/36)*1000)
   }
+
+
+
+
+
+// Это простой поворот к примеру ката (предоставлен Codewars, когда вы учитесь создавать свои собственные ката).
+// Добавьте в массив значение «codewars» websites/ Websites1000 раз.
+
+var websites = [];
+while (websites.length < 1000) {
+  websites.push("codewars");
+}
