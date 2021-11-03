@@ -364,3 +364,16 @@ function greet(name){
 // greet('Alex');
 
 
+
+
+// Задача Учитывая год, верните век, в котором он находится. Примеры
+// 1705 --> 18
+// 1900 --> 19
+// 1601 --> 17
+// 2000 --> 20
+
+function century(year) {
+  let x = Math.ceil(year/100);
+    return x; 
+}
+
