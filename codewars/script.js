@@ -397,3 +397,17 @@ function move (position, roll) {
 function removeExclamationMarks(s) {
   return s.replace(/!/gm, '');
 }
+
+
+
+
+
+
+// Создайте функцию, которая дает индивидуальное приветствие. Эта функция принимает два параметра: nameи owner.
+
+function greet (name, owner) {
+  if (name == owner) {
+  return "Hello boss";
+  }
+  return "Hello guest";
+  }
