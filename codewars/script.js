@@ -388,3 +388,12 @@ function century(year) {
 function move (position, roll) {
   return position + roll*2;
 }
+
+
+
+
+// Напишите функцию RemoveExclamationMarks, которая удаляет все восклицательные знаки из заданной строки.
+
+function removeExclamationMarks(s) {
+  return s.replace(/!/gm, '');
+}
