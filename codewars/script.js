@@ -458,3 +458,23 @@ var websites = [];
 while (websites.length < 1000) {
   websites.push("codewars");
 }
+
+
+
+
+// Учитывая набор чисел, верните аддитивное обратное для каждого числа. Каждый позитив становится негативом, а негатив становится позитивом.
+// invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+// invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+// invert([]) == []
+
+function invert(array) {
+  let inverted = []; 
+ for (let i = 0; i < array.length; i++) {
+   if (array[i] == 0) {
+     inverted.push(-0);
+   } else {
+   inverted.push(parseInt(-array[i]));
+     }
+ }
+ return inverted;
+}
