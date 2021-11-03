@@ -428,3 +428,21 @@ function greet (name, owner) {
      });
      return count > classPoints.length - count;
     }
+
+    class Kata {
+      static getVolumeOfCuboid(length, width, height) {
+        return length * width * height;
+      }
+    }
+
+
+
+
+// Таракан - одно из самых быстрых насекомых. Напишите функцию, которая принимает скорость в км в час и возвращает ее в см в секунду, округленную до целого числа (= пол).
+// Например:
+// 1.08 --> 30
+// Примечание! Входными данными является вещественное число (фактический тип зависит от языка) и> = 0. Результат должен быть целым числом.
+
+function cockroachSpeed(s) {
+  return parseInt(s * (1/36)*1000)
+  }
