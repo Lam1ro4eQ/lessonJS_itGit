@@ -478,3 +478,7 @@ function invert(array) {
  }
  return inverted;
 }
+
+
+
+
