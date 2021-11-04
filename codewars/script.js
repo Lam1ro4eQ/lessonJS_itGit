@@ -494,3 +494,11 @@ let championsLeagueGoals = 10;
 let copaDelReyGoals = 5;
 
 var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+
+
+
+
+function paperwork(n, m) {
+  if (n < 0 || m < 0) return 0;
+  return n * m;
+}
