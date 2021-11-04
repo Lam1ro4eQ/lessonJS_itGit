@@ -502,3 +502,21 @@ function paperwork(n, m) {
   if (n < 0 || m < 0) return 0;
   return n * m;
 }
+
+
+
+
+
+// JavaScript Arrays support a filter function (starting in JavaScript 1.6). Use the filter functionality to complete the function given.
+// The solution would work like the following:
+
+function getEvenNumbers(numbersArray){
+  for(i=0; i < numbersArray.length; i++){
+    if(numbersArray[i] % 2 != 0){
+       numbersArray.splice(i,1)
+       
+       i--;
+    };
+  };
+  return numbersArray;
+}
