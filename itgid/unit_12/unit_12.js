@@ -162,9 +162,13 @@ function f10() {
         [44, -56, 'task']
     ];
     for (let i = 0; i < a10.length; i++) {
+        
         for (let k = 0; k < a10[i].length; k++) {
+            var t = 999;
+            
             if (typeof a10[i][k] === "string") out += a10[i][k] + ' ';
         }
+        console.log(t);
     }
     document.querySelector('.out-10').innerHTML = out;
 }

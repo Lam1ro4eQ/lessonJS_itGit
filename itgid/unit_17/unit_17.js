@@ -72,11 +72,16 @@ let a4 = [4, "3", 6, 7, "12", 34, "56", 78, 90, 11];
 function t4() {
     a4_res = a4.filter( elem => {
         if (typeof(elem) === 'number') {
+            let t = 0;
             return elem;
         } 
+        console.log(t)
     });
+    
     return a4_res;
 }
+
+t4();
 
 document.querySelector('.b-4').onclick = () => {
     console.log(t4());
